@@ -21,6 +21,7 @@
   "jest": {
     "testEnvironment": "node"
   },
+  "keywords": ["repeat", "nano", "string", "string.prototype.repeat"],
   "babel": {
     "env": {
       "test": {
