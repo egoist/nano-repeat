@@ -1,0 +1,54 @@
+{
+  "name": "nano-repeat",
+  "version": "0.0.0",
+  "description": "Minimalistic String.prototype.repeat",
+  "repository": {
+    "url": "egoist/nano-repeat",
+    "type": "git"
+  },
+  "main": "dist/nano-repeat.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest && npm run lint",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "build": "bili --format umd --module-name repeat"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest-cli": "^19.0.0",
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0",
+    "babel-preset-env": "^1.4.0",
+    "bili": "^0.17.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  }
+}
