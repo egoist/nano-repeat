@@ -1,6 +1,6 @@
 {
   "name": "nano-repeat",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Minimalistic String.prototype.repeat",
   "repository": {
     "url": "egoist/nano-repeat",
@@ -21,7 +21,12 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["repeat", "nano", "string", "string.prototype.repeat"],
+  "keywords": [
+    "repeat",
+    "nano",
+    "string",
+    "string.prototype.repeat"
+  ],
   "babel": {
     "env": {
       "test": {
